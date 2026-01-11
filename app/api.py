@@ -1,6 +1,6 @@
 # app/api.py
+import base64
 import os
-import uuid
 from typing import List
 
 from celery.result import AsyncResult
@@ -14,9 +14,6 @@ from app.tasks import extract_multi_task
 # -------------------------
 # Configuration
 # -------------------------
-
-UPLOAD_DIR = os.environ.get("UPLOAD_DIR", "/tmp/uploads")
-os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 CORS_ORIGINS = os.environ.get("CORS_ORIGINS", "*").split(",")
 
@@ -75,17 +72,15 @@ async def create_job(files: List[UploadFile] = File(...)):
             )
 
         filename = f.filename or "upload.png"
-        job_filename = f"{uuid.uuid4().hex}_{filename}"
-        job_path = os.path.join(UPLOAD_DIR, job_filename)
 
         try:
             contents = await f.read()
-            with open(job_path, "wb") as out:
-                out.write(contents)
+            # Base64 encode for Celery serialization
+            b64_content = base64.b64encode(contents).decode("utf-8")
         except Exception as e:
-            raise HTTPException(status_code=500, detail=f"Failed to save upload: {e}")
+            raise HTTPException(status_code=500, detail=f"Failed to read upload: {e}")
 
-        items.append({"filename": filename, "path": job_path})
+        items.append({"filename": filename, "content_b64": b64_content})
 
     async_result = extract_multi_task.delay(items)
 
