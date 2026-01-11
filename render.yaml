@@ -3,7 +3,7 @@ services:
     name: ocr-redis
     plan: starter
     maxmemoryPolicy: noeviction
-    ipAllowList: []  # Allow all connections (or specify IPs)
+    ipAllowList: [] # Allow all connections (or specify IPs)
 
   - type: web
     name: ocr-api

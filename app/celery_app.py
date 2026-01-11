@@ -13,4 +13,5 @@ celery_app.conf.update(
     task_time_limit=120,
     task_soft_time_limit=110,
     result_expires=3600,  # 1 hour
+    imports=["app.tasks"],  # Auto-discover tasks
 )
