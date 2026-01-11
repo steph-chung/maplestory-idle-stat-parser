@@ -25,7 +25,7 @@ services:
       - key: CORS_ORIGINS
         value: "*" # replace with your frontend origin(s)
       - key: CP_TEMPLATE_PATH
-        value: "cp_template.png"
+        value: "app/cp_template.png"
 
   - type: worker
     name: ocr-worker
@@ -45,4 +45,4 @@ services:
           name: ocr-redis
           property: connectionString
       - key: CP_TEMPLATE_PATH
-        value: "cp_template.png"
+        value: "app/cp_template.png"
