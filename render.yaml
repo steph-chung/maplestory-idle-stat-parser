@@ -1,0 +1,48 @@
+services:
+  - type: redis
+    name: ocr-redis
+    plan: starter
+    maxmemoryPolicy: noeviction
+
+  - type: web
+    name: ocr-api
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: CELERY_BROKER_URL
+        fromService:
+          type: redis
+          name: ocr-redis
+          property: connectionString
+      - key: CELERY_RESULT_BACKEND
+        fromService:
+          type: redis
+          name: ocr-redis
+          property: connectionString
+      - key: CORS_ORIGINS
+        value: "*" # replace with your frontend origin(s)
+      - key: CP_TEMPLATE_PATH
+        value: "cp_template.png"
+    # Start command for the API
+    startCommand: uvicorn app.api:app --host 0.0.0.0 --port $PORT
+
+  - type: worker
+    name: ocr-worker
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: CELERY_BROKER_URL
+        fromService:
+          type: redis
+          name: ocr-redis
+          property: connectionString
+      - key: CELERY_RESULT_BACKEND
+        fromService:
+          type: redis
+          name: ocr-redis
+          property: connectionString
+      - key: CP_TEMPLATE_PATH
+        value: "cp_template.png"
+    startCommand: celery -A app.celery_app.celery_app worker --loglevel=INFO --concurrency=2

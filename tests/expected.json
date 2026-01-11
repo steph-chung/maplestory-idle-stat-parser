@@ -1,0 +1,243 @@
+{
+  "case1.png": {
+    "Attack": "8,504,942",
+    "Defense": "13,298",
+    "Max HP": "1,817,177",
+    "Max MP": "2,443",
+    "Critical Rate": "61.4%",
+    "Critical Damage": "88.9%",
+    "Attack Speed": "36.7%"
+  },
+  "case2.png": {
+    "Attack": "24M852K",
+    "Defense": "23,378",
+    "Max HP": "3,680,031",
+    "Max MP": "2,552",
+    "Critical Rate": "97.8%",
+    "Critical Damage": "170.3%",
+    "Attack Speed": "45.5%"
+  },
+  "case3.png": {
+    "STR": "30,951",
+    "INT": "470",
+    "LUK": "212",
+    "Stat Prop. Damage": "309.5%",
+    "MP Recovery Per Sec": "5",
+    "Damage Taken Decrease": "11.1%",
+    "Damage": "488.7%"
+  },
+  "case4.png": {
+    "Damage Amplification": "20%",
+    "Basic Attack Damage": "45.9%",
+    "Skill Damage": "40%",
+    "Defense Penetration": "25.3%",
+    "Boss Monster Damage": "36.1%",
+    "Normal Monster Damage": "97%",
+    "Status Effect Damage": "15.6%"
+  },
+  "case5.png": {
+    "Accuracy": "190",
+    "Evasion": "151",
+    "Min Damage Multiplier": "119.3%",
+    "Max Damage Multiplier": "188.2%",
+    "EXP Gain": "41%",
+    "Meso Drop": "55%",
+    "Final Damage": "43.3%"
+  },
+  "case6.png": {
+    "Attack": "14M119K",
+    "Defense": "21,754",
+    "Max HP": "2,454,716",
+    "Max MP": "2,542",
+    "Critical Rate": "86.5%",
+    "Critical Damage": "93.9%",
+    "Attack Speed": "42.5%"
+  },
+  "case7.png": {
+    "Attack": "17M447K",
+    "Defense": "21,754",
+    "Max HP": "2,454,716",
+    "Max MP": "2,542",
+    "Critical Rate": "86.5%"
+  },
+  "case8.png": {
+    "Companion Summoning Duration Increase": "24%",
+    "Basic Attack Target Increase": "1",
+    "Skill Cooldown Decrease (%)": "0%",
+    "Skill Cooldown Decrease (sec)": "0sec",
+    "3rd Job Skill Lv.": "11"
+  },
+  "case9.png": {
+    "Attack": "4,549,192",
+    "Defense": "7,811",
+    "Max HP": "663,423",
+    "Max MP": "1,209",
+    "Critical Rate": "47.2%",
+    "Critical Damage": "84.3%",
+    "Attack Speed": "27.8%"
+  },
+  "case10.jpg": {
+    "Attack": "12M109K",
+    "Defense": "14,367",
+    "Max HP": "1,879,234",
+    "Max MP": "1,661",
+    "Critical Rate": "92.6%",
+    "Critical Damage": "107.2%",
+    "Attack Speed": "40.3%"
+  },
+  "case11.jpg": {
+    "Attack": "14M945K",
+    "Defense": "14,450",
+    "Max HP": "2,502,108",
+    "Max MP": "1,894",
+    "Critical Rate": "98.8%",
+    "Critical Damage": "137%",
+    "Attack Speed": "39.2%"
+  },
+  "case13.png": {
+    "Attack": "19M563K",
+    "Defense": "12,312",
+    "Max HP": "1,781,985",
+    "Max MP": "1,679",
+    "Critical Rate": "80.1%",
+    "Critical Damage": "82.8%",
+    "Attack Speed": "76.5%"
+  },
+  "case14.png": {
+    "Attack": "4,924,587",
+    "Defense": "11,513",
+    "Max HP": "927,680",
+    "Max MP": "1,586"
+  },
+  "case15.png": {
+    "Attack": "16M298K",
+    "Defense": "16,395",
+    "Max HP": "2,111,234",
+    "Max MP": "2,073",
+    "Critical Rate": "99.1%",
+    "Critical Damage": "80.8%",
+    "Attack Speed": "51.8%"
+  },
+  "case16.png": {
+    "Attack": "17M447K",
+    "Defense": "21,754",
+    "Max HP": "2,454,716",
+    "Max MP": "2,542",
+    "Critical Rate": "104.5%",
+    "Critical Damage": "117.9%",
+    "Attack Speed": "42.5%"
+  },
+  "case17.png": {
+    "Attack": "11M320K",
+    "Defense": "13,434",
+    "Max HP": "2,040,589",
+    "Max MP": "1,767",
+    "Critical Rate": "82.9%",
+    "Critical Damage": "122.2%",
+    "Attack Speed": "29.9%"
+  },
+  "case18.jpg": {
+    "Attack": "15M5K",
+    "Defense": "14,744",
+    "Max HP": "1,961,046",
+    "Max MP": "2,295",
+    "Critical Rate": "74%"
+  },
+  "case19.jpg": {
+    "Critical Rate": "58.2%",
+    "Critical Damage": "124.6%",
+    "Attack Speed": "49.2%",
+    "STR": "13,107",
+    "DEX": "350",
+    "INT": "150",
+    "Stat Prop. Damage": "131.9%"
+  },
+  "case20.jpg": {
+    "Damage": "190.2%",
+    "Damage Amplification": "2.2%",
+    "Basic Attack Damage": "15%",
+    "Skill Damage": "12.5%",
+    "Defense Penetration": "10%",
+    "Boss Monster Damage": "67%",
+    "Normal Monster Damage": "32.5%"
+  },
+  "case21.jpg": {
+    "Accuracy": "160",
+    "Evasion": "90",
+    "Min Damage Multiplier": "114.4%",
+    "Max Damage Multiplier": "164.8%",
+    "EXP Gain": "31%",
+    "Meso Drop": "42%",
+    "Final Damage": "3%"
+  },
+  "case22.jpg": {
+    "Critical Rate": "70.3%",
+    "Critical Damage": "134.9%",
+    "Attack Speed": "49.3%",
+    "STR": "13,105",
+    "DEX": "350",
+    "INT": "150",
+    "Stat Prop. Damage": "131.9%"
+  },
+  "case23.png": {
+    "Attack": "10M387K",
+    "Defense": "17,022",
+    "Max HP": "1,776,197",
+    "Max MP": "1,457"
+  },
+  "case24.jpg": {
+    "Attack": "26M510K",
+    "Defense": "16,968",
+    "Max HP": "4,904,227",
+    "Max MP": "3,278",
+    "Critical Rate": "50.2%",
+    "Critical Damage": "113.6%",
+    "Attack Speed": "60.6%"
+  },
+  "case25.jpg": {
+    "Attack": "26M510K",
+    "Defense": "16,968",
+    "Max HP": "4,904,227",
+    "Max MP": "3,278",
+    "Critical Rate": "50.2%",
+    "Critical Damage": "113.6%",
+    "Attack Speed": "60.6%"
+  },
+  "case26.jpg": {
+    "Attack": "7,983,165",
+    "Defense": "11,847",
+    "Max HP": "1,318,678",
+    "Max MP": "1,768",
+    "Critical Rate": "63.4%"
+  },
+  "case27.png": {
+    "Attack": "33M151K",
+    "Defense": "33,962",
+    "Max HP": "3,374,602",
+    "Max MP": "2,620",
+    "Critical Rate": "91.6%"
+  },
+  "case28.jpg": {
+    "Defense": "17,723",
+    "Max HP": "2,226,636",
+    "Max MP": "2,885",
+    "Critical Rate": "108.9%",
+    "Critical Damage": "96.7%"
+  },
+  "case29.jpg": {
+    "Attack": "14M480K",
+    "Defense": "17,528",
+    "Max HP": "2,184,164",
+    "Max MP": "1,654",
+    "Critical Rate": "49.8%"
+  },
+  "case30.jpg": {
+    "Attack": "17M672K",
+    "Defense": "20,817",
+    "Max HP": "2,269,490",
+    "Max MP": "2,193",
+    "Critical Rate": "88.3%",
+    "Critical Damage": "110.8%",
+    "Attack Speed": "38.4%"
+  }
+}

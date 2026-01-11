@@ -1,0 +1,14 @@
+services:
+  api:
+    build:
+      args:
+        HTTP_PROXY: http://proxy.bloomberg.com:81
+        HTTPS_PROXY: http://proxy.bloomberg.com:81
+        NO_PROXY: ${NO_PROXY}
+
+  worker:
+    build:
+      args:
+        HTTP_PROXY: http://proxy.bloomberg.com:81
+        HTTPS_PROXY: http://proxy.bloomberg.com:81
+        NO_PROXY: ${NO_PROXY}
